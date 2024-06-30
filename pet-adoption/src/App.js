@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import AnotherPage from './components/AnotherPage';
+import Footer from './components/Footer';
 import Carousel from './components/Carousel';
 import BoxComponent from './components/BoxComponent';
 import ShareYourLove from './components/ShareYourLove';
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/resources" element={<Resourses />} />
           <Route path="/ngo" element={<NGO />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
@@ -45,6 +47,7 @@ const HomeWithCarousel = () => (
         linkText="Share Your Love ❤️"
         linkUrl="/share-your-love"
       />
+         
       
       {/* Second Box */}
       <BoxComponent 
